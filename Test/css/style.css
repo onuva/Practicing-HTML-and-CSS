@@ -1,34 +1,6 @@
 body {
 }
 
-
-header .container-fluid {
-  margin-top: 0px;
-  background-color: #eb9571;
-}
-
-#chickenBody {
-  background-color: #bd5420;
-}
-
-#beefBody {
-  background-color: #91112b;
-}
-
-#sushiBody {
-  background-color: #072e12;
-  color: whitesmoke;
-}
-
-.inText {
-  margin: 20px 45px 10px 45px;
-  padding-bottom: 20px;
-}
-
-body div {
-  margin: 50px 35px 20px 25px;
-}
-
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   
