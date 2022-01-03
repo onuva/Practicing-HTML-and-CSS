@@ -1,0 +1,214 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+header .container-fluid {
+	margin-top: -8px;
+	height: 60px;
+	background-color: #e0a91d;
+}
+
+body, html {
+	height: 100%;
+}
+
+.parallax {
+	background-image: url("../img/homePic.jpg");
+	height: 100%;
+	padding: 10px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#Title {
+  background:rgba(255,255,255,.6);
+  min-height: 150px;
+  width: 50%;
+  margin: 70px auto 150px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px -1px 10px 5px #223458;
+  overflow: auto;
+}
+
+#Title hr {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 10px solid rgba(0, 0, 0, 1);
+}
+
+
+#Intro {
+  background:rgba(163, 21, 8,.9);
+  min-height: 170px;
+  width: 80%;
+  margin: 70px auto 150px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px -1px 10px 5px #de7412;
+  font-size: 1.5vw;
+  overflow: auto;
+  color: #301b03;
+}
+
+
+#cake, #cook {
+  min-height: 270px;
+  margin: 50px auto ;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#cake {
+	border: 2px solid #662903;
+	background: url('../img/mugPic.jpeg') no-repeat;
+  	background-position: center;
+}
+
+#cook {
+	border: 2px solid #662903;
+	background: url('../img/cB.jpeg') no-repeat;
+  	background-position: center;
+}
+
+
+#cake span, #cook span{
+  float: right;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+.footer {
+	width: 100%;
+	min-height: 5%;
+	padding: 30px 50px 10px;
+	margin: 50px auto 0px;
+	background-color: #1f1f1f;
+	color: #faf1de;
+	page-break-after: always;
+	border-radius: 5px;
+	overflow: auto;
+}
+
+.foot {
+	margin-top: 50px;
+	margin-bottom: -50px;
+	border: 5px solid;
+}
+
+#hours, #contact{
+	font-size: 150%;
+	margin-bottom: 125px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact h3 {
+	font-size: 80%;
+}
+
+#Note {
+	font-size: 70%;
+}
+
+/********** Large devices only (xl & xxl) **********/
+@media (min-width: 1200px) {
+  .parallax {
+ 	height: 103%;
+ }
+ .footer {
+ 	width: 95%;
+ }
+ #Intro {
+ 	font-size: 145%;
+ }
+ #cake, #cook {
+ 	margin-top: 0px;
+ 	min-height: 400px;
+ 	width: 600px;
+ 	background-size: 600px 400px;
+ }
+}
+
+/********** Medium devices only (md & lg) **********/
+@media (min-width: 768px) and (max-width: 1199px) {
+  .parallax {
+ 	height: 100%;
+ }
+ #hours, #contact{
+	font-size: 135%;
+	margin-bottom: 110px;
+ }
+ #Intro {
+ 	font-size: 140%;
+ }
+ #cake, #cook {
+ 	margin-top: 0px;
+ 	min-height: 250px;
+ 	width: 360px;
+ 	background-size: 360px 250px;
+ }
+}
+
+/********** Small devices only (sm) **********/
+@media (min-width: 576px) and (max-width: 767px) {
+.parallax {
+ 	height: 100%;
+ }
+ #hours, #contact{
+	font-size: 125%;
+	margin-bottom: 110px;
+ }
+ #Intro {
+ 	font-size: 130%;
+ }
+ #cake, #cook {
+ 	margin-top: 0px;
+ 	min-height: 220px;
+ 	width: 300px;
+ 	background-size: 300px 220px;
+ }
+}
+
+/********** Extra small devices only (xs) **********/
+@media (min-width: 401px) and (max-width: 575px) {
+ #contact {
+ 	margin-bottom: 100px;
+ }
+ .parallax {
+ 	height: 155%;
+ }
+ #Intro {
+ 	font-size: 130%;
+ }
+ #tiles {
+ 	font-size: 90%;
+ }
+}
+
+@media (max-width: 400px) {
+ #contact {
+ 	margin-bottom: 100px;
+ }
+ .parallax {
+ 	height: 180%;
+ }
+ .footer {
+ 	height: 35%;
+ }
+ #Intro {
+ 	font-size: 130%;
+ }
+ #tiles {
+ 	font-size: 90%;
+ }
+}

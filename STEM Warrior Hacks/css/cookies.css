@@ -1,0 +1,223 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+header .container-fluid {
+	margin-top: -8px;
+	height: 60px;
+	background-color: #e0a91d;
+}
+
+body, html {
+	height: 100%;
+}
+
+.parallax {
+	background-image: url("../img/homePic.jpg");
+	height: 100%;
+	padding: 10px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#Title {
+  background:rgba(255,255,255,.6);
+  min-height: 150px;
+  width: 50%;
+  margin: 70px auto 150px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px -1px 10px 5px #223458;
+  overflow: auto;
+}
+
+hr {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 10px solid rgba(0, 0, 0, 1);
+}
+
+#choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB{
+  min-height: 270px;
+  width: 95%;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #662903;
+  box-shadow: 0px -1px 10px 0.5px #662903;
+  background-position: center;
+  transition: all .2s ease-in-out; 
+}
+
+#choc:hover, #dChoc:hover, #sni:hover, #orC:hover, #sug:hover, #mac:hover, #B:hover, #tB:hover{
+	box-shadow: 0px -1px 10px 5px #330e05;
+  transform: scale(1.1); 
+}
+
+#choc {
+	background: url('../img/choc.jpeg') no-repeat;
+}
+
+#dChoc {
+	background: url('../img/dChoc.jpeg') no-repeat;
+}
+
+#sni {
+	background: url('../img/sni.jpeg') no-repeat;
+}
+
+#orC {
+	background: url('../img/orC.jpeg') no-repeat;
+}
+
+#sug {
+	background: url('../img/sug.jpeg') no-repeat;
+}
+
+#mac {
+	background: url('../img/mac.jpeg') no-repeat;
+}
+
+#B {
+	background: url('../img/b.jpeg') no-repeat;
+}
+
+#tB {
+	background: url('../img/tB.jpeg') no-repeat;
+}
+
+
+
+#choc span, #dChoc span, #sni span, #orC span, #sug span, #mac span, #B span, #tB span{
+  float: right;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+
+.footer {
+	width: 100%;
+	min-height: 5%;
+	padding: 30px 50px 10px;
+	margin: 50px auto 0px;
+	background-color: #1f1f1f;
+	color: #faf1de;
+	page-break-after: always;
+	border-radius: 5px;
+	overflow: auto;
+}
+
+.foot {
+	margin-top: 50px;
+	margin-bottom: -50px;
+	border: 5px solid;
+}
+
+#hours, #contact{
+	font-size: 150%;
+	margin-bottom: 125px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact h3 {
+	font-size: 80%;
+}
+
+#Note {
+	font-size: 70%;
+}
+
+
+
+
+
+/********** Large devices only (xl & xxl) **********/
+@media (min-width: 1200px) {
+	#choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
+		width: 300px;
+  	background-size: 105% 300px;
+	}
+	.parallax {
+ 	height: 95%;
+ }
+ .footer {
+ 	width: 90%;
+ }
+}
+
+/********** Medium devices only (md & lg) **********/
+@media (min-width: 768px) and (max-width: 1199px) {
+  #choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
+		min-height: 200px;
+  	background-size: 105% 200px;
+	}
+	#B, #tB {
+		width: 80%;
+	}
+	.parallax {
+ 	height: 100%;
+ }
+ .footer {
+ 	width: 90%;
+ }
+ #hours, #contact{
+	font-size: 110%;
+	margin-bottom: 110px;
+ }
+}
+
+/********** Small devices only (sm) **********/
+@media (min-width: 576px) and (max-width: 767px) {
+	#choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
+  	background-size: 100% 270px;
+	}
+	.parallax {
+ 	height: 140%;
+ }
+ #hours, #contact{
+	font-size: 110%;
+	margin-bottom: 110px;
+ }
+ .footer {
+ 	width: 90%;
+ }
+}
+
+@media (min-width: 401px) and (max-width: 575px) {
+ #choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
+  	background-size: 100% 270px;
+	}
+	#contact {
+ 	margin-bottom: 100px;
+ }
+ .parallax {
+ 	height: 235%;
+ }
+
+}
+
+@media (max-width: 400px) {
+ #choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
+  	background-size: 100% 270px;
+	}
+	#contact {
+ 	margin-bottom: 100px;
+ }
+ .parallax {
+ 	height: 250%;
+ }
+ .footer {
+ 	height: 25%;
+ }
+ }
+}
