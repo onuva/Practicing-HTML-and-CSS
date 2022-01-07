@@ -3,10 +3,8 @@
 	margin: 0;
 	padding: 0;
 }
-header .container-fluid {
-	margin-top: -8px;
-	height: 60px;
-	background-color: #e0a91d;
+nav {
+  background-color: #e0a91d;
 }
 
 body, html {
@@ -144,28 +142,30 @@ hr {
 /********** Large devices only (xl & xxl) **********/
 @media (min-width: 1200px) {
 	#choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
-		width: 300px;
-  	background-size: 105% 300px;
+		min-height: 250px;
+		width: 260px;
+  	background-size: 260px 250px;
 	}
 	.parallax {
- 	height: 95%;
+ 	height: 900px;
  }
  .footer {
  	width: 90%;
  }
 }
 
-/********** Medium devices only (md & lg) **********/
-@media (min-width: 768px) and (max-width: 1199px) {
+/********** Medium devices only (lg) **********/
+@media (min-width: 992px) and (max-width: 1199px) {
   #choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
-		min-height: 200px;
-  	background-size: 105% 200px;
+		min-height: 230px;
+		width: 280px;
+  	background-size: 105% 230px;
 	}
 	#B, #tB {
-		width: 80%;
+		width: 320px;
 	}
 	.parallax {
- 	height: 100%;
+ 	height: 860px;
  }
  .footer {
  	width: 90%;
@@ -176,13 +176,37 @@ hr {
  }
 }
 
+/********** Medium devices only (md) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
+		min-height: 210px;
+		width: 210px;
+  	background-size: 210px 210px;
+	}
+	#B, #tB {
+		width: 250px;
+		background-size: 250px 220px;
+	}
+	.parallax {
+ 	height: 860px;
+ }
+ .footer {
+ 	width: 90%;
+ }
+ #hours, #contact{
+	font-size: 110%;
+	margin-bottom: 110px;
+ }
+}
+
+
 /********** Small devices only (sm) **********/
 @media (min-width: 576px) and (max-width: 767px) {
 	#choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
   	background-size: 100% 270px;
 	}
 	.parallax {
- 	height: 140%;
+ 	height: 880px;
  }
  #hours, #contact{
 	font-size: 110%;
@@ -195,7 +219,8 @@ hr {
 
 @media (min-width: 401px) and (max-width: 575px) {
  #choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
-  	background-size: 100% 270px;
+ 	width: 320px;
+  	background-size: 320px 270px;
 	}
 	#contact {
  	margin-bottom: 100px;
@@ -206,18 +231,35 @@ hr {
 
 }
 
-@media (max-width: 400px) {
+@media (min-width: 301px) and (max-width: 400px) {
  #choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
   	background-size: 100% 270px;
 	}
-	#contact {
+  #contact {
  	margin-bottom: 100px;
  }
  .parallax {
- 	height: 250%;
+ 	height: 1450px;
  }
  .footer {
- 	height: 25%;
- }
+ 	height: 35%;
  }
 }
+
+@media (max-width: 300px) {
+	#choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
+  	background-size: 100% 270px;
+	}
+  #contact {
+  margin-bottom: 100px;
+ }
+ .parallax {
+  height: 1600px;
+ }
+ .footer {
+  height: 35%;
+ 
+}
+
+
+

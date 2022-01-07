@@ -3,10 +3,8 @@
 	margin: 0;
 	padding: 0;
 }
-header .container-fluid {
-	margin-top: -8px;
-	height: 60px;
-	background-color: #e0a91d;
+nav {
+  background-color: #e0a91d;
 }
 
 body, html {
@@ -94,9 +92,11 @@ body, html {
 
 /********** Large devices only (xl & xxl) **********/
 @media (min-width: 1200px) {
-  
+  #Title h1 {
+	font-size: 200%;
+}
 	.parallax {
- 	height: 82%;
+ 	height: 900px;
  }
  .footer {
  	width: 90%;
@@ -105,14 +105,17 @@ body, html {
 
 /********** Medium devices only (md & lg) **********/
 @media (min-width: 768px) and (max-width: 1199px) {
-  #orderF {
+  #Title h1 {
+	font-size: 180%;
+}
+#orderF {
   	width: 40%;
   }
   #desB {
   	font-size: 95%;
   }
 .parallax {
- 	height: 80%;
+ 	height: 860px;
  }
  .footer {
  	width: 90%;
@@ -128,9 +131,11 @@ body, html {
 	#desB {
   	font-size: 73%;
   }
-
+#Title h1 {
+	font-size: 175%;
+}
 	.parallax {
- 	height: 80%;
+ 	height: 880px;
  }
  #hours, #contact{
 	font-size: 110%;
@@ -143,7 +148,10 @@ body, html {
 
 /********** Extra small devices only (xs) **********/
 @media (min-width: 401px) and (max-width: 575px) {
- #desB {
+ #Title h1 {
+	font-size: 160%;
+}
+#desB {
   	font-size: 73%;
   }
 	#contact {
@@ -155,22 +163,35 @@ body, html {
 
 }
 
-@media (max-width: 400px) {
+@media (min-width: 301px) and (max-width: 400px) {
  #desB {
   	font-size: 60%;
   }
-	#contact {
+  #contact {
  	margin-bottom: 100px;
  }
  .parallax {
- 	height: 170%;
+ 	height: 1450px;
  }
  .footer {
- 	height: 25%;
- }
+ 	height: 35%;
  }
 }
 
+@media (max-width: 300px) {
+  #desB {
+  	font-size: 60%;
+  }
+  #contact {
+  margin-bottom: 100px;
+ }
+ .parallax {
+  height: 1600px;
+ }
+ .footer {
+  height: 35%;
+ }
+}
 
 
 

@@ -3,10 +3,8 @@
 	margin: 0;
 	padding: 0;
 }
-header .container-fluid {
-	margin-top: -8px;
-	height: 60px;
-	background-color: #e0a91d;
+nav {
+  background-color: #e0a91d;
 }
 
 body, html {
@@ -131,34 +129,38 @@ hr {
 /********** Large devices only (xl & xxl) **********/
 @media (min-width: 1200px) {
   #mug, #marDry, #marMoist, #cheese, #tir{
-		width: 300px;
-  	background-size: 100% 300px;
+		width: 265px;
+  	background-size: 265px 275px;
 	}
 	#tir {
-	width: 400px;
+	width: 350px;
+	background-size: 350px 275px;
 	}
 	.parallax {
- 	height: 95%;
+ 	height: 900px;
  }
  .footer {
  	width: 90%;
  }
 }
 
-/********** Medium devices only (md & lg) **********/
-@media (min-width: 768px) and (max-width: 1199px) {
+/********** Medium devices only (lg) **********/
+@media (min-width: 992px) and (max-width: 1199px) {
   #mug, #marDry, #marMoist, #cheese, #tir{
-		min-height: 215px;
-  	background-size: 100% 215px;
+		min-height: 250px;
+		width: 285px;
+  	background-size: 285px 250px;
 	}
 	#cheese {
 	width: 320px;
+  	background-size: 320px 290px;
 	}
 	#tir {
 	width: 320px;
+  	background-size: 320px 250px;
 	}
 	 .parallax {
- 	height: 85%;
+ 	height: 860px;
  }
  .footer {
  	width: 90%;
@@ -169,13 +171,48 @@ hr {
  }
 }
 
+/********** Medium devices only (md) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #mug, #marDry, #marMoist, #cheese, #tir{
+		min-height: 200px;
+		width: 228px;
+  	background-size: 228px 200px;
+	}
+	#cheese {
+		min-height: 220px;
+	width: 270px;
+  	background-size: 270px 250px;
+	}
+	#tir {
+		min-height: 220px;
+	width: 270px;
+  	background-size: 270px 220px;
+	}
+	 .parallax {
+ 	height: 880px;
+ }
+ .footer {
+ 	width: 90%;
+ }
+ #hours, #contact{
+	font-size: 110%;
+	margin-bottom: 110px;
+ }
+}
+
+
 /********** Small devices only (sm) **********/
 @media (min-width: 576px) and (max-width: 767px) {
 	#mug, #marDry, #marMoist, #cheese, #tir{
   	background-size: 100% 270px;
 	}
+	#tir {
+		min-height: 270px;
+	width: 330px;
+  	background-size: 330px 270px;
+	}
 	.parallax {
- 	height: 115%;
+ 	height: 1000px;
  }
  #hours, #contact{
 	font-size: 110%;
@@ -189,31 +226,46 @@ hr {
 /********** Extra small devices only (xs) **********/
 @media (min-width: 401px) and (max-width: 575px) {
  #mug, #marDry, #marMoist, #cheese, #tir{
-  	background-size: 100% 270px;
+ 	width: 320px;
+  	background-size: 320px 270px;
 	}
 	#contact {
  	margin-bottom: 100px;
  }
  .parallax {
- 	height: 192%;
+ 	height: 1450px;
  }
 
 }
 
-@media (max-width: 400px) {
+@media (min-width: 301px) and (max-width: 400px) {
  #mug, #marDry, #marMoist, #cheese, #tir{
   	background-size: 100% 270px;
 	}
-	#contact {
+  #contact {
  	margin-bottom: 100px;
  }
  .parallax {
- 	height: 170%;
+ 	height: 1450px;
  }
  .footer {
- 	height: 25%;
+ 	height: 35%;
  }
+}
+
+@media (max-width: 300px) {
+	#mug, #marDry, #marMoist, #cheese, #tir{
+  	background-size: 100% 270px;
+	}
+  #contact {
+  margin-bottom: 100px;
  }
+ .parallax {
+  height: 1500px;
+ }
+ .footer {
+  height: 35%;
+ 
 }
 
 

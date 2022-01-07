@@ -3,12 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
-header .container-fluid {
-	margin-top: -8px;
-	height: 60px;
-	background-color: #e0a91d;
+nav {
+  background-color: #e0a91d;
 }
-
 body, html {
 	height: 100%;
 }
@@ -62,20 +59,25 @@ body, html {
   margin: 50px auto ;
   border-radius: 10px;
   overflow: hidden;
+  border: 2px solid #662903;
+  box-shadow: 0px -1px 10px 0.5px #662903;
+  background-position: center;
+  transition: all .2s ease-in-out; 
+  background-size: 100%;
 }
 
 #cake {
-	border: 2px solid #662903;
 	background: url('../img/mugPic.jpeg') no-repeat;
-  	background-position: center;
 }
 
 #cook {
-	border: 2px solid #662903;
 	background: url('../img/cB.jpeg') no-repeat;
-  	background-position: center;
 }
 
+#cake:hover, #cook:hover{
+  box-shadow: 0px -1px 10px 5px #330e05;
+  transform: scale(1.1); 
+}
 
 #cake span, #cook span{
   float: right;
@@ -123,7 +125,7 @@ body, html {
 /********** Large devices only (xl & xxl) **********/
 @media (min-width: 1200px) {
   .parallax {
- 	height: 103%;
+ 	height: 900px;
  }
  .footer {
  	width: 95%;
@@ -133,16 +135,34 @@ body, html {
  }
  #cake, #cook {
  	margin-top: 0px;
- 	min-height: 400px;
- 	width: 600px;
- 	background-size: 600px 400px;
+ 	min-height: 350px;
+ 	width: 400px;
+ 	background-size: 400px 350px;
  }
 }
-
-/********** Medium devices only (md & lg) **********/
-@media (min-width: 768px) and (max-width: 1199px) {
+/********** Medium devices only (lg) **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+.parallax {
+  height: 860px;
+ }
+ #hours, #contact{
+  font-size: 135%;
+  margin-bottom: 110px;
+ }
+ #Intro {
+  font-size: 140%;
+ }
+ #cake, #cook {
+  margin-top: 0px;
+  min-height: 310px;
+  width: 360px;
+  background-size: 360px 310px;
+ }
+}
+/********** Medium devices only (md) **********/
+@media (min-width: 768px) and (max-width: 991px) {
   .parallax {
- 	height: 100%;
+ 	height: 880px;
  }
  #hours, #contact{
 	font-size: 135%;
@@ -154,15 +174,15 @@ body, html {
  #cake, #cook {
  	margin-top: 0px;
  	min-height: 250px;
- 	width: 360px;
- 	background-size: 360px 250px;
+ 	width: 290px;
+ 	background-size: 290px 250px;
  }
 }
 
 /********** Small devices only (sm) **********/
 @media (min-width: 576px) and (max-width: 767px) {
 .parallax {
- 	height: 100%;
+ 	height: 890px;
  }
  #hours, #contact{
 	font-size: 125%;
@@ -174,8 +194,8 @@ body, html {
  #cake, #cook {
  	margin-top: 0px;
  	min-height: 220px;
- 	width: 300px;
- 	background-size: 300px 220px;
+ 	width: 260px;
+ 	background-size: 260px 220px;
  }
 }
 
@@ -185,7 +205,7 @@ body, html {
  	margin-bottom: 100px;
  }
  .parallax {
- 	height: 155%;
+ 	height: 1450px;
  }
  #Intro {
  	font-size: 130%;
@@ -193,14 +213,18 @@ body, html {
  #tiles {
  	font-size: 90%;
  }
+ #cake, #cook {
+  width: 335px;
+  background-size: 350px 300px;
+ }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 301px) and (max-width: 400px) {
  #contact {
  	margin-bottom: 100px;
  }
  .parallax {
- 	height: 180%;
+ 	height: 1450px;
  }
  .footer {
  	height: 35%;
@@ -208,7 +232,26 @@ body, html {
  #Intro {
  	font-size: 130%;
  }
- #tiles {
+ #cook, #cake{
  	font-size: 90%;
+  background-size: 100% 100%;
+ }
+}
+
+@media (max-width: 300px) {
+  #contact {
+  margin-bottom: 100px;
+ }
+ .parallax {
+  height: 1600px;
+ }
+ .footer {
+  height: 35%;
+ }
+ #Intro {
+  font-size: 130%;
+ }
+ #tiles {
+  font-size: 90%;
  }
 }
