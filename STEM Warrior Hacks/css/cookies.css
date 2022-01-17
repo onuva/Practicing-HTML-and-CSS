@@ -137,17 +137,31 @@ hr {
 
 
 
-
-
-/********** Large devices only (xl & xxl) **********/
-@media (min-width: 1200px) {
+/********** Large devices only (xxl) **********/
+@media (min-width: 1400px) {
 	#choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
 		min-height: 250px;
 		width: 260px;
   	background-size: 260px 250px;
 	}
 	.parallax {
- 	height: 900px;
+ 	height: 850px;
+ }
+ .footer {
+ 	width: 90%;
+ }
+}
+
+
+/********** Large devices only (xl) **********/
+@media (min-width: 1200px) and (max-width: 1399px) {
+	#choc, #dChoc, #sni, #orC, #sug, #mac, #B, #tB {
+		min-height: 250px;
+		width: 260px;
+  	background-size: 260px 250px;
+	}
+	.parallax {
+ 	height: 825px;
  }
  .footer {
  	width: 90%;
@@ -165,7 +179,7 @@ hr {
 		width: 320px;
 	}
 	.parallax {
- 	height: 860px;
+ 	height: 950px;
  }
  .footer {
  	width: 90%;
@@ -188,7 +202,7 @@ hr {
 		background-size: 250px 220px;
 	}
 	.parallax {
- 	height: 860px;
+ 	height: 910px;
  }
  .footer {
  	width: 90%;
@@ -206,7 +220,7 @@ hr {
   	background-size: 100% 270px;
 	}
 	.parallax {
- 	height: 880px;
+ 	height: 1200px;
  }
  #hours, #contact{
 	font-size: 110%;
@@ -226,7 +240,7 @@ hr {
  	margin-bottom: 100px;
  }
  .parallax {
- 	height: 235%;
+ 	height: 2120px;
  }
 
 }
@@ -239,10 +253,12 @@ hr {
  	margin-bottom: 100px;
  }
  .parallax {
- 	height: 1450px;
+ 	height: 2100px;
  }
  .footer {
  	height: 35%;
+ 	padding: 10px;
+ 	padding-bottom: 15px;
  }
 }
 
@@ -254,11 +270,12 @@ hr {
   margin-bottom: 100px;
  }
  .parallax {
-  height: 1600px;
+  height: 2125px;
  }
  .footer {
-  height: 35%;
- 
+  height: 37%;
+ padding: 10px;
+ 	padding-bottom: 15px;
 }
 
 
